@@ -7,11 +7,11 @@ const Location = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black mb-4 text-primary">
-              VISÍTANOS <span className="text-foreground">HOY</span>
+            <h2 className="text-4xl md:text-5xl font-black mb-4 text-secondary">
+              VISÍTANOS <span className="text-primary">HOY</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Estamos ubicados en el corazón de Guatemala
+              Entrenamiento al aire libre en Antigua Guatemala
             </p>
           </div>
           
@@ -24,11 +24,10 @@ const Location = () => {
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl mb-2 text-primary">Ubicación</h3>
+                    <h3 className="font-bold text-xl mb-2 text-secondary">Ubicación</h3>
                     <p className="text-muted-foreground">
-                      15 avenida 5-50 zona 15 VH3<br />
-                      Edificio Spazio Oficina 209<br />
-                      Guatemala City, Guatemala 01015
+                      Finca Colombia<br />
+                      Antigua Guatemala
                     </p>
                   </div>
                 </div>
@@ -40,10 +39,10 @@ const Location = () => {
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl mb-2 text-primary">Contacto</h3>
+                    <h3 className="font-bold text-xl mb-2 text-secondary">Contacto</h3>
                     <p className="text-muted-foreground">
-                      <a href="tel:35730909" className="hover:text-primary transition-colors">3573-0909</a><br />
-                      <a href="tel:39937086" className="hover:text-primary transition-colors">3993-7086</a>
+                      Contáctanos para más información<br />
+                      sobre nuestras clases al aire libre
                     </p>
                   </div>
                 </div>
@@ -55,7 +54,7 @@ const Location = () => {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl mb-2 text-primary">Horario</h3>
+                    <h3 className="font-bold text-xl mb-2 text-secondary">Horario</h3>
                     <p className="text-muted-foreground">
                       Ver horarios disponibles en<br />
                       la sección de reservas
@@ -66,7 +65,7 @@ const Location = () => {
               
               <Button 
                 size="lg" 
-                className="w-full bg-primary hover:bg-primary-glow text-white font-bold text-lg py-6 shadow-glow hover:scale-105 transition-all"
+                className="w-full bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg py-6 shadow-glow hover:scale-105 transition-all"
               >
                 PROGRAMA TU VISITA
               </Button>
@@ -75,7 +74,7 @@ const Location = () => {
             {/* Map */}
             <div className="relative h-[500px] rounded-2xl overflow-hidden border-4 border-primary/30 shadow-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.5!2d-90.489!3d14.601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM2JzAzLjYiTiA5MMKwMjknMjAuNCJX!5e0!3m2!1sen!2sgt!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.2!2d-90.732!3d14.560!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDMzJzM2LjAiTiA5MMKwNDMnNTUuMiJX!5e0!3m2!1sen!2sgt!4v1234567890"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

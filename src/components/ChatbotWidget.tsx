@@ -9,7 +9,7 @@ const ChatbotWidget = () => {
       {/* Chatbot Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 bg-primary hover:bg-primary-glow text-white p-4 rounded-full shadow-glow hover:shadow-2xl transition-all duration-300 hover:scale-110"
+        className="fixed bottom-6 right-6 z-50 bg-secondary hover:bg-secondary/90 text-primary p-4 rounded-full shadow-glow hover:shadow-2xl transition-all duration-300 hover:scale-110"
         aria-label="Abrir chat"
       >
         {isOpen ? (
@@ -23,15 +23,15 @@ const ChatbotWidget = () => {
       {isOpen && (
         <div className="fixed bottom-24 right-6 z-50 w-80 md:w-96 bg-card rounded-2xl shadow-2xl border border-border overflow-hidden animate-in slide-in-from-bottom-5 duration-300">
           {/* Header */}
-          <div className="bg-gradient-to-r from-primary to-primary-glow p-4">
+          <div className="bg-secondary p-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="bg-white rounded-full p-2">
-                  <MessageCircle className="w-5 h-5 text-primary" />
+                <div className="bg-primary rounded-full p-2">
+                  <MessageCircle className="w-5 h-5 text-secondary" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-white">U Pilates</h3>
-                  <p className="text-xs text-white/80">Asistente Virtual</p>
+                  <h3 className="font-bold text-primary">CrossFit Antigua</h3>
+                  <p className="text-xs text-primary/80">Asistente Virtual</p>
                 </div>
               </div>
             </div>
@@ -47,7 +47,7 @@ const ChatbotWidget = () => {
                 </div>
                 <div className="bg-muted rounded-2xl rounded-tl-none p-3 max-w-[80%]">
                   <p className="text-sm text-foreground">
-                    ¡Hola! 👋 Bienvenido a U Pilates. ¿Cómo puedo ayudarte hoy?
+                    ¡Hola! 👋 Bienvenido a CrossFit Antigua. ¿Listo para entrenar al aire libre?
                   </p>
                 </div>
               </div>
@@ -55,13 +55,13 @@ const ChatbotWidget = () => {
               {/* Quick Replies */}
               <div className="flex flex-col gap-2 pl-11">
                 <button className="bg-card hover:bg-muted border border-border rounded-xl p-3 text-sm text-left transition-colors">
-                  📋 Ver paquetes disponibles
+                  🏋️ Ver WODs del día
                 </button>
                 <button className="bg-card hover:bg-muted border border-border rounded-xl p-3 text-sm text-left transition-colors">
-                  📅 Reservar una clase
+                  📅 Reservar mi clase
                 </button>
                 <button className="bg-card hover:bg-muted border border-border rounded-xl p-3 text-sm text-left transition-colors">
-                  📍 ¿Cómo llegar?
+                  📍 ¿Cómo llegar a Finca Colombia?
                 </button>
               </div>
             </div>
@@ -77,7 +77,7 @@ const ChatbotWidget = () => {
                 disabled
               />
               <button 
-                className="bg-primary hover:bg-primary-glow text-secondary px-4 py-2 rounded-xl font-bold transition-colors"
+                className="bg-secondary hover:bg-secondary/90 text-primary px-4 py-2 rounded-xl font-bold transition-colors"
                 disabled
               >
                 Enviar

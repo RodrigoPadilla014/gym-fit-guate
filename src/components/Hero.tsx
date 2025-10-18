@@ -1,14 +1,15 @@
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/upilates-logo.jpg";
+import logo from "@/assets/crossfit-antigua-logo.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary-glow to-primary overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-secondary via-secondary to-primary overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-          backgroundSize: '40px 40px'
+          backgroundImage: 'radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0)',
+          backgroundSize: '40px 40px',
+          color: 'rgb(94, 234, 212)'
         }} />
       </div>
 
@@ -18,23 +19,25 @@ const Hero = () => {
           <div className="mb-8 flex justify-center">
             <img 
               src={logo} 
-              alt="U Pilates Logo" 
-              className="w-48 h-48 rounded-full shadow-2xl border-4 border-white"
+              alt="CrossFit Antigua Logo" 
+              className="w-64 h-64 object-contain drop-shadow-2xl"
             />
           </div>
           
           {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-black mb-6 text-white">
-            TRANSFORMA TU <span className="text-secondary">CUERPO</span>
+          <h1 className="text-5xl md:text-7xl font-black mb-6 text-primary">
+            PRIMER Y ÚNICO <span className="text-white">CROSSFIT</span> DE ANTIGUA 🌋
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
-            Descubre el poder del Pilates. Fortalece, estira y conecta con tu cuerpo.
+          <p className="text-xl md:text-2xl mb-8 text-primary/90 max-w-2xl mx-auto">
+            Un espacio único de entrenamiento al aire libre.
+            <br />
+            🏃🏻‍♂️🍃☀️🏋🏻‍♂️🤸🏻🌋
           </p>
 
-          <div className="bg-white/10 backdrop-blur-sm border-2 border-white rounded-2xl p-4 mb-8 inline-block">
-            <p className="text-2xl font-bold text-white">
-              ✨ INSCRIPCIÓN <span className="text-secondary">GRATIS</span> ✨
+          <div className="bg-primary/20 backdrop-blur-sm border-2 border-primary rounded-2xl p-4 mb-8 inline-block">
+            <p className="text-2xl font-bold text-primary">
+              ⚡ OUTDOORS BOX ⚡
             </p>
           </div>
           
@@ -42,14 +45,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="bg-white hover:bg-secondary text-primary font-bold text-lg px-8 py-6 shadow-2xl hover:shadow-glow transition-all hover:scale-105"
+              className="bg-primary hover:bg-primary-glow text-secondary font-bold text-lg px-8 py-6 shadow-2xl hover:shadow-glow transition-all hover:scale-105"
             >
-              VER PAQUETES
+              VER HORARIOS
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary font-bold text-lg px-8 py-6 transition-all hover:scale-105"
+              className="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-secondary font-bold text-lg px-8 py-6 transition-all hover:scale-105"
             >
               RESERVAR CLASE
             </Button>
