@@ -9,7 +9,7 @@ const ChatbotWidget = () => {
       {/* Chatbot Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 bg-primary hover:bg-primary-glow text-secondary p-4 rounded-full shadow-[0_0_30px_rgba(250,204,21,0.4)] hover:shadow-[0_0_40px_rgba(250,204,21,0.6)] transition-all duration-300 hover:scale-110"
+        className="fixed bottom-6 right-6 z-50 bg-primary hover:bg-primary-glow text-white p-4 rounded-full shadow-glow hover:shadow-2xl transition-all duration-300 hover:scale-110"
         aria-label="Abrir chat"
       >
         {isOpen ? (
@@ -26,12 +26,12 @@ const ChatbotWidget = () => {
           <div className="bg-gradient-to-r from-primary to-primary-glow p-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="bg-secondary rounded-full p-2">
+                <div className="bg-white rounded-full p-2">
                   <MessageCircle className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-secondary">Century Fitness</h3>
-                  <p className="text-xs text-secondary/80">Asistente Virtual</p>
+                  <h3 className="font-bold text-white">U Pilates</h3>
+                  <p className="text-xs text-white/80">Asistente Virtual</p>
                 </div>
               </div>
             </div>
@@ -43,11 +43,11 @@ const ChatbotWidget = () => {
               {/* Bot Message */}
               <div className="flex gap-3">
                 <div className="bg-primary rounded-full p-2 h-8 w-8 flex-shrink-0">
-                  <MessageCircle className="w-4 h-4 text-secondary" />
+                  <MessageCircle className="w-4 h-4 text-white" />
                 </div>
                 <div className="bg-muted rounded-2xl rounded-tl-none p-3 max-w-[80%]">
                   <p className="text-sm text-foreground">
-                    ¡Hola! 👋 Bienvenido a Century Fitness. ¿Cómo puedo ayudarte hoy?
+                    ¡Hola! 👋 Bienvenido a U Pilates. ¿Cómo puedo ayudarte hoy?
                   </p>
                 </div>
               </div>
@@ -55,10 +55,10 @@ const ChatbotWidget = () => {
               {/* Quick Replies */}
               <div className="flex flex-col gap-2 pl-11">
                 <button className="bg-card hover:bg-muted border border-border rounded-xl p-3 text-sm text-left transition-colors">
-                  📋 Ver planes de membresía
+                  📋 Ver paquetes disponibles
                 </button>
                 <button className="bg-card hover:bg-muted border border-border rounded-xl p-3 text-sm text-left transition-colors">
-                  🏋️ Información sobre clases
+                  📅 Reservar una clase
                 </button>
                 <button className="bg-card hover:bg-muted border border-border rounded-xl p-3 text-sm text-left transition-colors">
                   📍 ¿Cómo llegar?
